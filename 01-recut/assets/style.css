@@ -786,11 +786,13 @@ video {
 .prose p {
 	margin-top: 0.8em;
 	margin-bottom: 0.8em;
+	overflow: auto; /* if you still want high-resolution and are fine with scrolling */
 }
 
 .prose img {
 	margin-top: 2em;
 	margin-bottom: 2em;
+	max-width: min(28rem, 100%) !important; /* if you don't need to view the image in detail and are fine with a bird's-eye view with shrinking details */
 }
 
 .prose video {
